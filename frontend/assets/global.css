@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: 'Dancing Script', cursive;
+  background: #FDC50D;
+}
+
+main {
+  max-width: 550px;
+  height: 550px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.main-body {
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(0, 255, 0, 0.2) 0%, rgba(255, 255, 255, 0.5) 33.33%, rgba(255, 255, 255, 0.5) 66.67%, rgba(255, 0, 0, 0.2) 100%);
+  padding: 0 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+}
+
+.signin-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.signin-page--title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 48px;
+  color: #002F6C;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 140px;
+}
+
+.signin-page--subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #002F6C;
+  margin-top: 14px;
+}
+
+.signin-page--button {
+  width: 245px;
+  height: 57px;
+  background: #FDC50D;
+  border-radius: 15px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin-top: 22px
+}
+
+.signin-page--button:focus {
+  outline: none;
+}
+
+.signin-page--button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.donation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.donation-page--header {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.donation-page--total {
+  color: #002F6C;
+  font-family: 'Caveat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.signout-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #535252;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Caveat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: auto;
+}
+
+.signout-button:focus {
+  outline: none;
+}
+
+.signout-button:hover {
+  color: #b0b0b0;
+}
+
+.donation-page--desc {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #002F6C;
+  margin-top: 30px;
+}
+
+.donation-page--form {
+  margin-top: 10px;
+}
+
+.donation-page--inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.donation-page--amount {
+  width: 75px;
+  height: 45px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #D0D4D9;
+  border-radius: 12px;
+  margin: 12px 12px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #002F6C;  
+}
+
+.no-spinner::-webkit-inner-spin-button, 
+.no-spinner::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.donation-page--amount.donation-selected {
+  background: #FFF1C4;
+}
+
+.donate-button {
+  width: 245px;
+  height: 57px;
+  background: #FDC50D;
+  border-radius: 15px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.donate-button:focus {
+  outline: none;
+}
+
+.donate-button:enabled:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.donate-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+
+.donation-page--or {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #002F6C;
+  margin-top: 35px;
+}
+
+.lottery-button {
+  width: 245px;
+  height: 57px;
+  background: #FDC50D;
+  border-radius: 15px;
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;  
+  color: #002F6C;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.lottery-button:focus {
+  outline: none;
+}
+
+.lottery-button:enabled:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.lottery-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
