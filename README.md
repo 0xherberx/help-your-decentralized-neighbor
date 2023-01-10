@@ -84,14 +84,29 @@ Web Application
 -------------------------------------
 
 The frontend part is built on ReactJS and uses NEAR API JS to connect and communicate with the NEAR blockchain.
-/frontend/assets/SignInPage.png
-/frontend/assets/MainPage.png
+
+### SignInPage
+
+![](/frontend/assets/SignInPage.png)
+
+### MainPage
+
+![](/frontend/assets/MainPage.png)
+
 
 Future Development
 ==================
+
 Some ideas for future enhancements development:
-- Lottery history
-- Monthly hall of fame for donors
+- Latest donations
 - Top 3 donations
+- Monthly hall of fame for donors
+- Lottery history
 - Location statistics
 - Winners can claim with a message
+
+
+Authors
+==================
+
+- [@0xherberx](https://github.com/0xherberx)
