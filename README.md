@@ -42,11 +42,31 @@ Randomness in the lottery is ensured by the NEAR random seed feature, it comes f
 The recurring task of picking the winner and transferring the prize pool is scheduled using cron.cat, a decentralized scheduling for blockchain transactions.
 
 
-Installation
-==================
-1. Close this repo
-2. Run npm install
-3. Run npm test
+Quick Start
+===========
+
+1. Clone this repo
+2. Run `npm install` (install dependencies)
+3. Run `npm run deploy` (build the contract and deploy it in a testnet account)
+4. Run `npm start` (start the web application to interact with your smart contract)
+
+Scripts
+-------------------------------------
+See below for more convenience scripts...
+
+Build the smart contract and the web application:
+```
+"npm run build": "npm run build:contract && npm run build:web"
+"npm run build:contract": "cd contract && ./build.sh"
+"npm run build:web": "cd frontend && npm run build"
+```
+
+Run unit tests and integration tests
+```
+"npm test": "npm run test:unit && npm run test:integration"
+"npm run test:unit": "cd contract && cargo test"
+"npm run test:integration": "cd integration-tests && cargo run --example integration-tests \"..contract/target/wasm32-unknown-unknown/release/help_your_decentralized_neighbor.wasm\""
+```
 
 
 Future Development
@@ -57,25 +77,6 @@ Some ideas for future enhancements development:
 - Top 3 donations
 - Location statistics
 - Winners can claim with a message
-
-
-Quick Start
-===========
-
-If you haven't installed dependencies during setup:
-
-    npm install
-
-
-Build and deploy your contract to TestNet with a temporary dev account:
-
-    npm run deploy
-
-Test your contract:
-
-    npm test
-
-If you have a frontend, run `npm start`. This will run a dev server.
 
 
 Exploring The Code
