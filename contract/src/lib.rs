@@ -134,8 +134,8 @@ impl Contract {
             },
             None => {
                 // Donor doesn't exist
-                log!("1.account_donations before: {}", "null");
-                log!("1.self.donations before: {:?}",  self.donations.to_vec());
+                log!("account_donations before: {}", "null");
+                log!("self.donations before: {:?}",  self.donations.to_vec());
 
                 let mut acc_donations: Vector<DonationMessage> = Vector::new(b"c"); 
                 acc_donations.push(&donation_msg);
@@ -146,8 +146,8 @@ impl Contract {
                 };
                 self.donations.insert(&donor, &donations_by_account);
 
-                log!("1.account_donations after: {:?}", self.donations.get(&donor).unwrap().account_donations.to_vec());
-                log!("1.self.donations after: {:?}",  self.donations.to_vec());
+                log!("account_donations after: {:?}", self.donations.get(&donor).unwrap().account_donations.to_vec());
+                log!("self.donations after: {:?}",  self.donations.to_vec());
             }
         }
         
